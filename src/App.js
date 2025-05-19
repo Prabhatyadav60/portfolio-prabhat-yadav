@@ -3,15 +3,19 @@ import Preloader from "../src/components/Pre";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home/Home";
 import About from "./components/About/About";
-import Projects from "./components/Projects/Projects";
+import Projects from "./components/Projects/index"; 
+import DevProjects from "./components/Projects/DevProjects";
+import AIProjects from "./components/Projects/AIProjects";
 import Footer from "./components/Footer";
 import Resume from "./components/Resume/ResumeNew";
+
 import {
-  BrowserRouter as Router, 
+  BrowserRouter as Router,
   Route,
   Routes,
   Navigate
 } from "react-router-dom";
+
 import ScrollToTop from "./components/ScrollToTop";
 import "./style.css";
 import "./App.css";
@@ -24,7 +28,7 @@ function App() {
     const timer = setTimeout(() => {
       upadateLoad(false);
     }, 1200);
- 
+
     return () => clearTimeout(timer);
   }, []);
 
@@ -36,10 +40,16 @@ function App() {
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/project" element={<Projects />} />
           <Route path="/about" element={<About />} />
           <Route path="/resume" element={<Resume />} />
-          <Route path="*" element={<Navigate to="/"/>} />
+
+          {/* Updated Project Routes */}
+          <Route path="/project" element={<Projects />} />
+          <Route path="/project/development" element={<DevProjects />} />
+          <Route path="/project/ai-ml" element={<AIProjects />} />
+
+          {/* Fallback Route */}
+          <Route path="*" element={<Navigate to="/" />} />
         </Routes>
         <Footer />
       </div>

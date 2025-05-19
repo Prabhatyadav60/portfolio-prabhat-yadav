@@ -7,7 +7,8 @@ function Type() {
       options={{
         strings: [
           "Competitive Programmer",
-          "MERN Stack Developer",
+          "AI/ML Enthusiast",
+          "Frontend  Developer",
           "Open Source Contributor",
         ],
         delay:35,

@@ -5,7 +5,7 @@ import homeLogo from "../../Assets/home-main.svg";
 import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
-import { SiCodechef, SiCodeforces, SiGeeksforgeeks, SiLeetcode } from "react-icons/si";
+import { SiCodechef, SiCodeforces, SiGeeksforgeeks, SiGithub, SiLeetcode } from "react-icons/si";
 
 function Home() {
   return (
@@ -24,13 +24,13 @@ function Home() {
 
               <h1 className="heading-name">
                 I'M
-                <strong className="main-name"> PIYUSH YADAV</strong>
+                <strong className="main-name"> PRABHAT YADAV</strong>
               </h1>
               <div className="cplinks">
                 <div className="leetcode" >
                   <a
                     className="links"
-                    href="https://leetcode.com/u/yadavpiy02/"
+                    href="https://leetcode.com/u/prabhatyadav6386/"
                     target="_blank" rel="noopener noreferrer"
                   >
                     <SiLeetcode style={{scale:"2"}} />
@@ -38,18 +38,19 @@ function Home() {
                 </div>
                 <div className="codechef" >
                   <a
+                   href="https://github.com/Prabhatyadav60"
+                    target="_blank" rel="noopener noreferrer"
                     className="links"
-                    href="https://www.codechef.com/users/stud_pet_56"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                   
                   >
-                    <SiCodechef style={{scale:"2"}} />
+                    <SiGithub  style={{scale:"2"}} />
+                   
                   </a>
                 </div>
                 <div className="cf" >
                   <a
                     className="links"
-                    href="https://codeforces.com/profile/yadavpiy02"
+                    href="https://codeforces.com/profile/prabhatyadav60"
                     target="_blank" rel="noopener noreferrer"
                   >
                     <SiCodeforces style={{scale:"2"}} />
@@ -58,10 +59,11 @@ function Home() {
                 <div className="gfg" >
                   <a
                     className="links"
-                    href="https://www.geeksforgeeks.org/user/yadavpk83b/"
-                    target="_blank" rel="noopener noreferrer"
+                  href="https://www.codechef.com/users/prabhatyadav60"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
-                    <SiGeeksforgeeks style={{scale:"2"}} />
+                    <SiCodechef style={{scale:"2"}} />
                   </a>
                 </div>
               </div>

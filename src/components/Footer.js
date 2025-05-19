@@ -15,13 +15,13 @@ function Footer() {
       <Row>  
         
         <Col md="4" className="footer-copywright">
-          <h3>Copyright © {year} Piyush</h3>
+          <h3>Copyright © {year} Prabhat</h3>
         </Col>
         <Col md="4" className="footer-body">
           <ul className="footer-icons">
             <li className="social-icons">
               <a
-                href="https://github.com/piy3"
+                href="https://github.com/prabhatyadav60"
                 style={{ color: "white" }}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -31,17 +31,7 @@ function Footer() {
             </li>
             <li className="social-icons">
               <a
-                href="https://x.com/yadavpiy02"
-                style={{ color: "white" }}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <AiOutlineTwitter />
-              </a>
-            </li>
-            <li className="social-icons">
-              <a
-                href="https://www.linkedin.com/in/piyush-yadav-744806270/"
+                href="https://www.linkedin.com/in/prabhat-yadav-404b7727a/"
                 style={{ color: "white" }}
                 target="_blank"
                 rel="noopener noreferrer"
