@@ -22,6 +22,7 @@ function Projects() {
                 imgPath={devImg}
                 title="Development Projects"
                 description="Full‑stack and frontend projects using React, Tailwind, Node.js, etc."
+                demoLink="#"
               />
             </Link>
           </Col>
@@ -32,6 +33,7 @@ function Projects() {
                 imgPath={aiImg}
                 title="AI/ML Projects"
                 description="ML/DL projects including computer vision, NLP, and model deployment."
+                demoLink="#"
               />
             </Link>
           </Col>

@@ -7,7 +7,12 @@ import { BsGithub } from "react-icons/bs";
 function ProjectCard({ imgPath, isBlog, title, description, ghLink, demoLink }) {
   return (
     <Card className="project-card-view">
-      <Card.Img variant="top" src={imgPath} alt="project-img" style={{ height: "69%", objectFit: "cover" }} />
+      <Card.Img
+        variant="top"
+        src={imgPath}
+        alt="project-img"
+        style={{ height: "69%", objectFit: "cover" }}
+      />
       <Card.Body>
         <Card.Title>{title}</Card.Title>
         <Card.Text style={{ textAlign: "justify" }}>{description}</Card.Text>
@@ -18,11 +23,14 @@ function ProjectCard({ imgPath, isBlog, title, description, ghLink, demoLink }) 
               {isBlog ? "Blog" : "GitHub"}
             </Button>
           )}
-          {demoLink && demoLink !== "#" && (
-            <Button variant="primary" href={demoLink} target="_blank">
-              <CgWebsite /> &nbsp;Demo
-            </Button>
-          )}
+          <Button
+            variant="primary"
+            href={demoLink}
+            target="_blank"
+            hidden={ demoLink === "#"}
+          >
+            <CgWebsite /> &nbsp;Demo
+          </Button>
         </div>
       </Card.Body>
     </Card>

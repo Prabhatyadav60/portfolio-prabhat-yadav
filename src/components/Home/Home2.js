@@ -27,15 +27,15 @@ function Home2() {
       <br />
       I enjoy working with the
       <i>
-        <b className="purple"> MERN stack</b>
-      </i>, and modern frontend frameworks like
+        
+      </i>modern frontend frameworks like
       <i>
         <b className="purple"> React.js and Next.js</b>
       </i>.
       <br />
       <br />
       I'm passionate about
-      <b className="purple"> web scraping</b>, and exploring machine learning by
+      <b className="purple"> web scraping,selenium </b>, and exploring machine learning by
       <i>
         <b className="purple"> fine-tuning open-source models on Hugging Face using Colab</b>
       </i>.
