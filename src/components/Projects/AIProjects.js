@@ -10,7 +10,8 @@ import imgText from "../../Assets/Projects/img-txt.png";
 import travelPlanner from "../../Assets/Projects/travel.png";
 import pdfJson from "../../Assets/Projects/pdf-json.png";
 import linkedinEDA from "../../Assets/Projects/linkden.png";
-
+import NoCode from "../../Assets/NoCodeNexus.png";
+import Virtual_Hire from "../../Assets/Projects/Virtual.jpg"
 function AllProjects() {
   return (
     <Container fluid className="project-section">
@@ -20,6 +21,20 @@ function AllProjects() {
           <strong className="purple">AI / ML Projects</strong>
         </h1>
         <Row style={{ justifyContent: "center" }}>
+           <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={NoCode}
+              isBlog={false}
+              title="NoCodeNexus"
+              description="Build & Deploy Websites with Just Prompts! NoCodeNexus is an AI-driven, no-code website builder that lets you craft, preview, and publish fully functional websites by simply typing your design and content prompts."
+              ghLink="https://github.com/Prabhatyadav60/No-Code-Nexus"
+              demoLink="https://no-code-nexus-eight.vercel.app/"
+            />
+          </Col>
+
+
+
+
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={ragBot}
@@ -27,7 +42,7 @@ function AllProjects() {
               title="RAG-LangChain Chatbot"
               description="Retrieval-Augmented Generation chatbot using LangChain, FAISS, and hosted LLMs (OpenAI/GROQ). Upload PDFs and get contextual answers in a Streamlit app."
               ghLink="https://github.com/Prabhatyadav60/RAG-langchain-chatbot"
-              demoLink="https://rag-langchainchatbot.streamlit.app/"
+              demoLink="#"
              
             />
           </Col>
@@ -91,6 +106,19 @@ function AllProjects() {
               demoLink="https://colab.research.google.com/drive/1OuExBp9uzvTUoQJtBLveEPkZEl68CEqH?usp=sharing"
             />
           </Col>
+                  <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={Virtual_Hire}
+              isBlog={false}
+              title="Virtual Hire"
+              description="Automated interviews with real-time proctoring — including face tracking, tab-switch alerts, and plagiarism checks — ensuring fair and secure candidate evaluation.
+               ------- Comming soon.....
+              "
+              ghLink="#"
+              demoLink="#"
+            />
+          </Col>
+
         </Row>
 
         {/* === Section 3: Data Analysis / EDA === */}

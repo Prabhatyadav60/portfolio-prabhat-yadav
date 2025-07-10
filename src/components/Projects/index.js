@@ -16,6 +16,18 @@ function Projects() {
           Click below to explore project categories.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+            <Col md={4} className="project-card">
+            <Link to="/project/ai-ml" style={{ textDecoration: "none" }}>
+              <ProjectCard
+                imgPath={aiImg}
+                title="AI/ML Projects"
+                description="ML/DL projects including computer vision, NLP, and model deployment."
+                demoLink="#"
+              />
+            </Link>
+          </Col>
+
+          
           <Col md={4} className="project-card">
             <Link to="/project/development" style={{ textDecoration: "none" }}>
               <ProjectCard
@@ -27,16 +39,7 @@ function Projects() {
             </Link>
           </Col>
 
-          <Col md={4} className="project-card">
-            <Link to="/project/ai-ml" style={{ textDecoration: "none" }}>
-              <ProjectCard
-                imgPath={aiImg}
-                title="AI/ML Projects"
-                description="ML/DL projects including computer vision, NLP, and model deployment."
-                demoLink="#"
-              />
-            </Link>
-          </Col>
+        
         </Row>
       </Container>
     </Container>

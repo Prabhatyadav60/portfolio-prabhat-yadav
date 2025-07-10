@@ -18,9 +18,10 @@ function ProjectCard({ imgPath, isBlog, title, description, ghLink, demoLink }) 
         <Card.Text style={{ textAlign: "justify" }}>{description}</Card.Text>
         <div className="d-flex justify-content-between">
           {ghLink && (
-            <Button variant="primary" href={ghLink} target="_blank">
+            <Button variant="primary" href={ghLink} hidden={ghLink === "#"} target="_blank">   
               <BsGithub /> &nbsp;
               {isBlog ? "Blog" : "GitHub"}
+             
             </Button>
           )}
           <Button
